@@ -4,7 +4,7 @@ public class Player {
 	
 	private int gold = 3;
 
-	public int gold() {
+	public int getGold() {
 		return this.gold;
 	}
 
