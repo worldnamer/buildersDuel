@@ -16,6 +16,9 @@ public class Player {
 		if (gold > this.gold){
 			throw new NotEnoughGoldException();
 		}
+		else {
+			this.gold -= gold;
+		}
 	}
 
 	

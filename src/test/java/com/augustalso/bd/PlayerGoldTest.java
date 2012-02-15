@@ -25,10 +25,10 @@ public class PlayerGoldTest {
 		assertEquals(6, player.getGold());
 	}
 	
-	@Test(expected = NotEnoughGoldException.class)
+	@Test
 	public void itCanHaveGoldSubtracted() {
-		player.subtractGold(4);
-		
+		player.subtractGold(1);
+		assertEquals(2, player.getGold());
 	}
 	
 	@Test
